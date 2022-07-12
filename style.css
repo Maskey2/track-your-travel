@@ -152,6 +152,9 @@
       }
     }
     @media only screen and (max-width: 600px) {
+      body{
+        overflow-x: hidden;
+      }
       .grid-container {
         max-width: 500px;        
         grid-gap: 10px;       
@@ -162,10 +165,11 @@
       }
       .footer{
         bottom: 0;    
-        width: 90%;   
+        width: 85%;   
         position: absolute;
       }
       .index p {
         font-size: 12px;
       }
+      
     }
