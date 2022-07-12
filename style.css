@@ -63,7 +63,7 @@
       font-weight: 400;
       background-color: #5f9ea0;
       padding: 20px;
-      margin: 10px 0;
+      margin: 10px 0;     
     }
   
     #ME {
@@ -103,7 +103,10 @@
       grid-row-start: 9;
     }
   
-  
+    .index p {
+      color: black;
+       font-size:20px;
+    }
     .sidebar {
       height: 100%;
       width: 0;
@@ -140,14 +143,29 @@
   
     /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
     @media screen and (max-height: 450px) {
-      body{
-        background-color: lightblue;
-      }
       .sidebar {
         padding-top: 15px;
       }
   
       .sidebar a {
         font-size: 18px;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .grid-container {
+        max-width: 500px;        
+        grid-gap: 10px;       
+      }
+      .state {        
+        font-size: 12px;        
+        height: 30PX;        
+      }
+      .footer{
+        bottom: 0;    
+        width: 90%;   
+        position: absolute;
+      }
+      .index p {
+        font-size: 12px;
       }
     }
