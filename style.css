@@ -1,0 +1,153 @@
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      color: #fff;
+      font-weight: 300;
+    }
+  
+    .grid-container {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      display: grid;
+      grid-gap: 25px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+    }
+  
+    .index {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .state {
+      background-color: #5f9ea0;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70PX;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 10px;
+    }
+  
+    .t-state {
+      background-color: #003153;
+    }
+  
+    .n-state {
+      background-color: #cf3476;
+    }
+  
+  
+    .state:hover {
+      cursor: pointer;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      transition: 0.5s all ease-in-out;
+    }
+  
+    .header {
+      font-size: 40px;
+      text-align: center;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      background-color: #5f9ea0;
+      padding: 20px;
+      margin: 10px 0;
+    }
+  
+    .footer {
+      font-size: 20px;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 400;
+      background-color: #5f9ea0;
+      padding: 20px;
+      margin: 10px 0;
+    }
+  
+    #ME {
+      grid-column-start: 12;
+    }
+  
+    #VT {
+      grid-column-start: 11;
+    }
+  
+    #WA,
+    #OR,
+    #CA {
+      grid-column-start: 2;
+    }
+  
+  
+    #AZ {
+      grid-column-start: 3;
+    }
+  
+    #OK,
+    #TX {
+      grid-column-start: 5;
+    }
+  
+    #HI {
+      grid-column-start: 1;
+    }
+  
+    #FL {
+      grid-column-start: 10;
+    }
+  
+    #PR {
+      grid-column-start: 12;
+      grid-row-start: 9;
+    }
+  
+  
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #004040;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+  
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    .sidebar a:hover {
+      color: #88d8c0;
+    }
+  
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      body{
+        background-color: lightblue;
+      }
+      .sidebar {
+        padding-top: 15px;
+      }
+  
+      .sidebar a {
+        font-size: 18px;
+      }
+    }
